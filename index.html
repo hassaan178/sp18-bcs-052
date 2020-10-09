@@ -1,0 +1,85 @@
+<html> 
+<head>
+	<title>Add/Update Person Form</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="./java.js"></script>
+
+<style>
+	body{
+		background:none;
+	}
+	table,th{
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	th{
+
+		padding: 10px;
+		text-align:left;
+	}
+	
+
+</style>
+</head>
+
+
+<body>
+	<div class="regform"><h1>Add/Update Person Form</h1></div>
+	<div class="name"></div>
+<form>
+	<div id="name">
+		<label class="first-label">Name</label>
+		<input type="text" name="first-name"><br>
+		<br>
+
+
+<label for="Gender">Gender</label>
+<label for="male">Male</label>
+<input type="radio" name="Gender" value="male" id="male">
+<label for="female">Female</label>
+<input type="radio" name="Gender" value="female" id="female">
+        
+
+        <br><br>
+
+        <label class="age">Age</label>
+        <input type="Age" name="Age">
+        <br><br>
+        <label class="City">City</label>
+  
+		<input type="text" name="City">
+<br><br>
+			<button id="add" onclick="addbtn()" >ADD</button>
+			<button type="reset" value="reset">Reset</button>
+			<button type="Update" value="Update">Update</button>		
+		
+	</div>
+</form>
+
+<br><br>
+<div class="container">
+	<div class="tab tab-1">
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Gender</th>
+		<th>Age</th>
+		<th>City</th>
+		<th>Action</th>
+	</tr>
+
+</table>
+</div>
+</div>
+<div class="tab">
+	<input type="text" name="first-name" id="first-name">
+	<input type="radio" name="Gender" id="Gender">
+	<input type="text" name="Age" id="Age">
+	<input type="text" name="City" id="City">
+	<button type="Delete" value="Delete">Delete</button>
+			<button type="Update" value="Update">Update</button>		
+</div>
+</body>
+
+
+</html>		
